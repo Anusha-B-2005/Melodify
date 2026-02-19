@@ -1,0 +1,271 @@
+*{
+    margin:0;
+    padding:0;
+}
+
+.left{
+    width:25vw;
+    padding: 10px;
+}
+
+.right{
+    width:75vw;
+}
+
+.home ul li{
+    display:flex;
+    gap:13px;
+    width:14px;
+    list-style:None;
+    padding-top: 14px;
+    font-weight: bold;
+    font-size: 18px;;
+}
+
+.heading{
+    display:flex;
+    gap:13px;
+    width:100%;
+    padding-top: 14px;
+    font-weight: bold;
+    padding:23px 14px;
+    align-items: center;
+    font-size:13px;
+}
+
+.heading img{
+    width: 30px;
+}
+
+.library{
+    min-height: 80vh;
+    position:relative;
+    background-color: rgb(192, 192, 208);
+}
+
+.footer {
+    display: flex;
+    font-size: 10px;
+    color:grey;
+    gap: 13px;
+    position: absolute;
+    bottom: 0;
+    padding: 10px 0;
+}
+
+.footer a{
+    color: gray;
+}
+
+.right {
+    margin: 16px 0;
+    position: relative;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    background-image: linear-gradient(to bottom,  rgb(35, 35, 35), #222251);
+    border-radius: 15px;
+}
+
+.header > *{
+    padding: 20px;
+}
+
+.mainpg{
+    overflow-y: scroll;
+    height: 85vh;
+}
+
+.playlist{
+    padding: 16px;
+}
+
+.cardContainer{
+    margin: 18px;
+    display: flex;
+    gap: 10px;
+    overflow-x: auto;
+}
+
+.card{
+    height: 200px;
+    width: 150px;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: rgb(15, 15, 15);
+    position: relative;
+}
+
+.card:hover{
+    background-color: rgb(32, 32, 32);
+}
+
+.card > *{
+    padding-top: 2px;
+}
+
+.play{
+    width: 28px;
+    height: 28px;
+    display: flex;
+    position: absolute;
+    top:165px;
+    right: 10px;
+}
+
+.buttons > *{
+    margin: 0 12px;
+}
+
+.buttons a{
+    text-decoration: none;
+}
+
+.signupbtn{
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 16px;
+    padding: 5px;
+    width: 78px;
+    border: none;
+    outline: none;
+}
+
+.signupbtn:hover{
+    font-size: 17px;
+    color: blue;
+    width: 80px;
+}
+
+.signupbtn a{
+    color: white;
+    text-decoration: none;
+}
+
+.loginbtn{
+    background-color: white;
+    color:black;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 16px;
+    padding: 5px;
+    width: 78px;
+}
+
+.loginbtn a{
+    color: black;
+    text-decoration: none;
+}
+
+.loginbtn:hover{
+    font-size: 17px;
+    width: 80px;
+}
+
+.playlist{
+    position: relative;
+}
+
+.playbar{
+    position: fixed;
+    bottom: 0px;
+    border-radius:18px;
+    width: 100%;
+    padding: 12px;
+    width:71.5vw;
+    height: 38px;
+    background-color: rgb(0, 0, 0);
+    background-image: url(http://wallpapercave.com/wp/zAaujcJ.jpg);
+}
+
+.songbutton{
+    display: flex;
+    justify-content: center;
+    gap: 18px;
+}
+
+.sgs{
+    display: flex;
+    gap: 10px;
+    padding: 10px;
+}
+
+.songlist ul{
+    padding: 0 12px;
+    flex-wrap: wrap;
+    overflow-y:scroll;
+    height: 55vh;
+}
+
+.songlist ul li{
+    list-style: none;
+    display: flex;
+    gap: 25px;
+    cursor: pointer;
+    padding: 12px 0;
+    margin: 5px 0;
+    padding: 13px;
+    background-color: rgb(10, 10, 10);
+    border-radius: 5px;
+}
+
+.songlist ul li:hover{
+    background-color: rgb(34, 34, 34);
+}
+
+.info {
+    flex-grow: 1;
+}
+
+.palynow{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.playnow img:hover {
+    transform: scale(1.1);
+}
+
+.seekbar{
+    height: 2px;
+    width: 97%;
+    border: 2px solid white;
+    position: absolute;
+    bottom: 0px;
+    border-radius: 10px;
+    margin: 5px;
+}
+
+.circle{
+    width: 13px;
+    height: 13px;
+    border-radius: 6px;
+    background-color: white;
+    position:relative;
+    bottom: 6px;
+    left: 0;
+    transition: left 0.5s;
+}
+
+.abovebar{
+    display: flex;
+    justify-content: space-between;
+}
+
+.left{
+    display: block;
+    transition: all 0.3s ease-in-out; 
+}
+
+@media screen and (max-width: 768px) {
+    .left {
+        display: none; 
+    }
+}

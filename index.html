@@ -1,0 +1,690 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Melodify</title>
+    <link rel="icon" href="logo.svg" type="icon"> 
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="StyleSheet.css">
+</head>
+
+<body>
+    <div class="container flex bg-black">
+        <div class="left ">
+            <div class="home bg-grey rounded m-1">
+                <div class="S-logo"><img src="Images/S-logo.svg" alt="Logo"></div>
+                <ul>
+                    <li><img class="invert" src="Images/home.svg" alt="home">Home</li>
+                    <li><img class="invert" src="Images/Search.svg" alt="search"><a href="search.html">Search</a></li>
+                    <li><img class="invert" src="Images/Favorite.svg" alt="favorites"><a href="fav.html">Favorites</a></li>
+                </ul>
+            </div>
+            <div class="library bg-grey rounded m-1">
+                <div class="heading">
+                    <img class="invert" src="Images/Playlist.svg" alt="">
+                    <h1><a href="library.html" >Library</a></h1>
+                </div>
+                <div>
+                    <div class="sgs">
+                        <img class="invert" src="Images/Music.svg">
+                        <h2>Songs.....</h2>
+                    </div>
+                    <div class="songlist">
+                        <ul>
+                            <li>
+                                <img src="https://tse4.mm.bing.net/th?id=OIP.qFFfcvlt4YFI2TOqJYi2iwHaJ4&pid=Api&P=0&h=180" width="40" height="40" alt="Star">
+                                <div class="info">
+                                    <div>Twinkle_Twinkle</div>
+                                    <div>............</div>
+                                </div>
+                                <div class="playnow">
+                                    <img class="invert" src="Images/Play.svg" alt="Play"  width="25" height="25" onclick="playPauseSong(this, 'songs/Twinkle_Twinkle.mp3')">
+                                </div>
+                            </li>
+                            <li>
+                                <img src="https://tse2.mm.bing.net/th?id=OIP.QaTNSGoJJm4AwRmNJPIGzwHaGw&pid=Api&P=0&h=180" width="40" height="40" alt="Sheep">
+                                <div class="info">
+                                    <div>Baa_Black_Sheep</div>
+                                    <div>............</div>
+                                </div>
+                                <div class="playnow">
+                                    <img class="invert" src="Images/Play.svg" alt="Play"  width="25" height="25" onclick="playPauseSong(this, 'songs/Baa_Black_Sheep.mp3')">
+                                </div>
+                            </li>
+                            <li>
+                                <img src="https://tse1.mm.bing.net/th?id=OIP.bhxDxvJrDCiv_uxxLm7BPwHaJ4&pid=Api&P=0&h=180" width="40" height="40" alt="Bells">
+                                <div class="info">
+                                    <div>Jingle_Bells</div>
+                                    <div>............</div>
+                                </div>
+                                <div class="playnow">
+                                    <img class="invert" src="Images/Play.svg" alt="Play"  width="25" height="25" onclick="playPauseSong(this, 'songs/jingle-bells.mp3')">
+                                </div>
+                            </li>
+                            <li>
+                                <img src="https://tse3.mm.bing.net/th?id=OIP.8OLg6SNYG358DOFhLnWpdgHaFw&pid=Api&P=0&h=180" width="40" height="40" alt="Sheep">
+                                <div class="info">
+                                    <div>Happy_Birthday</div>
+                                    <div>............</div>
+                                </div>
+                                <div class="playnow">
+                                    <img class="invert" src="Images/Play.svg" alt="Play"  width="25" height="25" onclick="playPauseSong(this, 'songs/happy-birthday.mp3')">
+                                </div>
+                            </li>
+                            <li>
+                                <img src="https://tse4.mm.bing.net/th?id=OIP.qFFfcvlt4YFI2TOqJYi2iwHaJ4&pid=Api&P=0&h=180" width="40" height="40" alt="Star">
+                                <div class="info">
+                                    <div>Twinkle_Twinkle</div>
+                                    <div>............</div>
+                                </div>
+                                <div class="playnow">
+                                    <img class="invert" src="Images/Play.svg" alt="Play"  width="25" height="25" onclick="playPauseSong(this, 'songs/Twinkle_Twinkle.mp3')">
+                                </div>
+                            </li>
+                            <li>
+                                <img src="https://tse2.mm.bing.net/th?id=OIP.QaTNSGoJJm4AwRmNJPIGzwHaGw&pid=Api&P=0&h=180" width="40" height="40" alt="Sheep">
+                                <div class="info">
+                                    <div>Baa_Black_Sheep</div>
+                                    <div>............</div>
+                                </div>
+                                <div class="playnow">
+                                    <img class="invert" src="Images/Play.svg" alt="Play"  width="25" height="25" onclick="playPauseSong(this, 'songs/Baa_Black_Sheep.mp3')">
+                                </div>
+                            </li>
+                            <li>
+                                <img src="https://tse1.mm.bing.net/th?id=OIP.bhxDxvJrDCiv_uxxLm7BPwHaJ4&pid=Api&P=0&h=180" width="40" height="40" alt="Sheep">
+                                <div class="info">
+                                    <div>Jingle_Bells</div>
+                                    <div>............</div>
+                                </div>
+                                <div class="playnow">
+                                    <img class="invert" src="Images/Play.svg" alt="Play"  width="25" height="25" onclick="playPauseSong(this, 'songs/jingle-bells.mp3')">
+                                </div>
+                            </li>
+                            <li>
+                                <img src="https://tse3.mm.bing.net/th?id=OIP.8OLg6SNYG358DOFhLnWpdgHaFw&pid=Api&P=0&h=180" width="40" height="40" alt="Sheep">
+                                <div class="info">
+                                    <div>Happy_Birthday</div>
+                                    <div>............</div>
+                                </div>
+                                <div class="playnow">
+                                    <img class="invert" src="Images/Play.svg" alt="Play"  width="25" height="25" onclick="playPauseSong(this, 'songs/happy-birthday.mp3')">
+                                </div>
+                            </li>
+                            <li>
+                                <img src="https://tse4.mm.bing.net/th?id=OIP.qFFfcvlt4YFI2TOqJYi2iwHaJ4&pid=Api&P=0&h=180" width="40" height="40" alt="Star">
+                                <div class="info">
+                                    <div>Twinkle_Twinkle</div>
+                                    <div>............</div>
+                                </div>
+                                <div class="playnow">
+                                    <img class="invert" src="Images/Play.svg" alt="Play"  width="25" height="25" onclick="playPauseSong(this, 'songs/Twinkle_Twinkle.mp3')">
+                                </div>
+                            </li>
+                            <li>
+                                <img src="https://tse1.mm.bing.net/th?id=OIP.bhxDxvJrDCiv_uxxLm7BPwHaJ4&pid=Api&P=0&h=180" width="40" height="40" alt="Sheep">
+                                <div class="info">
+                                    <div>Jingle_Bells</div>
+                                    <div>............</div>
+                                </div>
+                                <div class="playnow">
+                                    <img class="invert" src="Images/Play.svg" alt="Play"  width="25" height="25" onclick="playPauseSong(this, 'songs/jingle-bells.mp3')">
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer">
+                <div><a href=""><span>About</span></a></div>
+                <div><a href=""><span>Legal</span></a></div>
+                <div><a href=""><span>Privacy Policy</span></a>
+                </div>
+                <div><a href=""><span>Cookies</span></a></div>
+                <div><a href=""><span>About Ads</span></a></div>
+                <div><a href=""><span>Accessibility</span></a></div>
+            </div>
+        </div>
+        <div class="right bg-grey">
+            <div class="header border">
+                <div class="nav">
+                    <div class="hamburgerContainer">
+                        <img width="40" class="hamburger" src="Images/logo.svg" alt="">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M15 6L9.70711 11.2929C9.37377 11.6262 9.20711 11.7929 9.20711 12C9.20711 12.2071 9.37377 12.3738 9.70711 12.7071L15 18"
+                                stroke="#ffffff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M9 18L14.2929 12.7071C14.6262 12.3738 14.7929 12.2071 14.7929 12C14.7929 11.7929 14.6262 11.6262 14.2929 11.2929L9 6"
+                                stroke="#ffffff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </div>
+                </div>
+                <div>
+                    <h1>Learning...</h1>
+                </div>
+                <div class="buttons">
+                    <button class="signupbtn"><a href="signIn.html">Sign up</a></button>
+                    <button class="loginbtn"><a href="logIn.html">Log in</a></button>
+                </div>
+            </div>
+            
+            <div class="mainpg">
+                <div class="playlist">
+                    <h1>Recents</h1>
+                    <div class="cardContainer">
+                        <div class="card ">
+                            <div class="play">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 50 50" stroke="#000000">
+                                   
+                                    <circle cx="25" cy="25" r="24" fill="blue" />
+                                    
+                                    <polygon points="18,13 35,25 18,37" fill="black" />
+                                  </svg>
+                            </div>
+                            <img src="Images/recent.png" alt="" height="140" width="150">
+                            <p></p>Song Name</p>
+                            <p>Song Information</p>
+                        </div>
+                        <div class="card ">
+                            <div class="play">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 50 50" stroke="#000000">
+                                   
+                                    <circle cx="25" cy="25" r="24" fill="blue" />
+                                    
+                                    <polygon points="18,13 35,25 18,37" fill="black" />
+                                  </svg>
+                            </div>
+                            <img src="Images/recent.png" alt="" height="140" width="150">
+                            <p></p>Song Name</p>
+                            <p>Song Information</p>
+                        </div>
+                        <div class="card ">
+                            <div class="play">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 50 50" stroke="#000000">
+                                   
+                                    <circle cx="25" cy="25" r="24" fill="blue" />
+                                    
+                                    <polygon points="18,13 35,25 18,37" fill="black" />
+                                  </svg>
+                            </div>
+                            <img src="Images/recent.png" alt="" height="140" width="150">
+                            <p></p>Song Name</p>
+                            <p>Song Information</p>
+                        </div>
+                        <div class="card ">
+                            <div class="play">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 50 50" stroke="#000000">
+                                   
+                                    <circle cx="25" cy="25" r="24" fill="blue" />
+                                    
+                                    <polygon points="18,13 35,25 18,37" fill="black" />
+                                  </svg>
+                            </div>
+                            <img src="Images/recent.png" alt="" height="140" width="150">
+                            <p></p>Song Name</p>
+                            <p>Song Information</p>
+                        </div>
+                        <div class="card ">
+                            <div class="play">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 50 50" stroke="#000000">
+                                   
+                                    <circle cx="25" cy="25" r="24" fill="blue" />
+                                    
+                                    <polygon points="18,13 35,25 18,37" fill="black" />
+                                  </svg>
+                            </div>
+                            <img src="Images/recent.png" alt="" height="140" width="150">
+                            <p></p>Song Name</p>
+                            <p>Song Information</p>
+                        </div>
+                        <div class="card ">
+                            <div class="play">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 50 50" stroke="#000000">
+                                   
+                                    <circle cx="25" cy="25" r="24" fill="blue" />
+                                    
+                                    <polygon points="18,13 35,25 18,37" fill="black" />
+                                  </svg>
+                            </div>
+                            <img src="Images/recent.png" alt="" height="140" width="150">
+                            <p></p>Song Name</p>
+                            <p>Song Information</p>
+                        </div>
+                        <div class="card ">
+                            <div class="play">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 50 50" stroke="#000000">
+                                   
+                                    <circle cx="25" cy="25" r="24" fill="blue" />
+                                    
+                                    <polygon points="18,13 35,25 18,37" fill="black" />
+                                  </svg>
+                            </div>
+                            <img src="Images/recent.png" alt="" height="140" width="150">
+                            <p></p>Song Name</p>
+                            <p>Song Information</p>
+                        </div>
+                        <div class="card ">
+                            <div class="play">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 50 50" stroke="#000000">
+                                   
+                                    <circle cx="25" cy="25" r="24" fill="blue" />
+                                    
+                                    <polygon points="18,13 35,25 18,37" fill="black" />
+                                  </svg>
+                            </div>
+                            <img src="Images/recent.png" alt="" height="140" width="150">
+                            <p></p>Song Name</p>
+                            <p>Song Information</p>
+                        </div>
+                        <div class="card ">
+                            <div class="play">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 50 50" stroke="#000000">
+                                   
+                                    <circle cx="25" cy="25" r="24" fill="blue" />
+                                    
+                                    <polygon points="18,13 35,25 18,37" fill="black" />
+                                  </svg>
+                            </div>
+                            <img src="Images/recent.png" alt="" height="140" width="150">
+                            <p></p>Song Name</p>
+                            <p>Song Information</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="playlist">
+                    <h1>Top Songs</h1>
+                    <div class="cardContainer">
+                        <div class="card ">
+                            <div class="play">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 50 50" stroke="#000000">
+                                   
+                                    <circle cx="25" cy="25" r="24" fill="blue" />
+                                    
+                                    <polygon points="18,13 35,25 18,37" fill="black" />
+                                  </svg>
+                            </div>
+                            <img src="Images/top.png" alt="" height="140" width="150">
+                            <p></p>Song Name</p>
+                            <p>Song Information</p>
+                        </div>
+                        <div class="card ">
+                            <div class="play">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 50 50" stroke="#000000">
+                                   
+                                    <circle cx="25" cy="25" r="24" fill="blue" />
+                                    
+                                    <polygon points="18,13 35,25 18,37" fill="black" />
+                                  </svg>
+                            </div>
+                            <img src="Images/top.png" alt="" height="140" width="150">
+                            <p></p>Song Name</p>
+                            <p>Song Information</p>
+                        </div>
+                        <div class="card ">
+                            <div class="play">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 50 50" stroke="#000000">
+                                   
+                                    <circle cx="25" cy="25" r="24" fill="blue" />
+                                    
+                                    <polygon points="18,13 35,25 18,37" fill="black" />
+                                  </svg>
+                            </div>
+                            <img src="Images/top.png" alt="" height="140" width="150">
+                            <p></p>Song Name</p>
+                            <p>Song Information</p>
+                        </div>
+                        <div class="card ">
+                            <div class="play">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 50 50" stroke="#000000">
+                                   
+                                    <circle cx="25" cy="25" r="24" fill="blue" />
+                                    
+                                    <polygon points="18,13 35,25 18,37" fill="black" />
+                                  </svg>
+                            </div>
+                            <img src="Images/top.png" alt="" height="140" width="150">
+                            <p></p>Song Name</p>
+                            <p>Song Information</p>
+                        </div>
+                        <div class="card ">
+                            <div class="play">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 50 50" stroke="#000000">
+                                   
+                                    <circle cx="25" cy="25" r="24" fill="blue" />
+                                    
+                                    <polygon points="18,13 35,25 18,37" fill="black" />
+                                  </svg>
+                            </div>
+                            <img src="Images/top.png" alt="" height="140" width="150">
+                            <p></p>Song Name</p>
+                            <p>Song Information</p>
+                        </div>
+                        <div class="card ">
+                            <div class="play">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 50 50" stroke="#000000">
+                                   
+                                    <circle cx="25" cy="25" r="24" fill="blue" />
+                                    
+                                    <polygon points="18,13 35,25 18,37" fill="black" />
+                                  </svg>
+                            </div>
+                            <img src="Images/top.png" alt="" height="140" width="150">
+                            <p></p>Song Name</p>
+                            <p>Song Information</p>
+                        </div>
+                        <div class="card ">
+                            <div class="play">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 50 50" stroke="#000000">
+                                   
+                                    <circle cx="25" cy="25" r="24" fill="blue" />
+                                    
+                                    <polygon points="18,13 35,25 18,37" fill="black" />
+                                  </svg>
+                            </div>
+                            <img src="Images/top.png" alt="" height="140" width="150">
+                            <p></p>Song Name</p>
+                            <p>Song Information</p>
+                        </div>
+                        <div class="card ">
+                            <div class="play">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 50 50" stroke="#000000">
+                                   
+                                    <circle cx="25" cy="25" r="24" fill="blue" />
+                                    
+                                    <polygon points="18,13 35,25 18,37" fill="black" />
+                                  </svg>
+                            </div>
+                            <img src="Images/top.png" alt="" height="140" width="150">
+                            <p></p>Song Name</p>
+                            <p>Song Information</p>
+                        </div>
+                        <div class="card ">
+                            <div class="play">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 50 50" stroke="#000000">
+                                   
+                                    <circle cx="25" cy="25" r="24" fill="blue" />
+                                    
+                                    <polygon points="18,13 35,25 18,37" fill="black" />
+                                  </svg>
+                            </div>
+                            <img src="Images/top.png" alt="" height="140" width="150">
+                            <p></p>Song Name</p>
+                            <p>Song Information</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="playlist">
+                    <h1>Trending Songs</h1>
+                    <div class="cardContainer">
+                        <div class="card ">
+                            <div class="play">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 50 50" stroke="#000000">
+                                   
+                                    <circle cx="25" cy="25" r="24" fill="blue" />
+                                    
+                                    <polygon points="18,13 35,25 18,37" fill="black" />
+                                  </svg>
+                            </div>
+                            <img src="Images/Trending.png" alt="" height="140" width="150">
+                            <p></p>Song Name</p>
+                            <p>Song Information</p>
+                        </div>
+                        <div class="card ">
+                            <div class="play">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 50 50" stroke="#000000">
+                                   
+                                    <circle cx="25" cy="25" r="24" fill="blue" />
+                                    
+                                    <polygon points="18,13 35,25 18,37" fill="black" />
+                                  </svg>
+                            </div>
+                            <img src="Images/Trending.png" alt="" height="140" width="150">
+                            <p></p>Song Name</p>
+                            <p>Song Information</p>
+                        </div>
+                        <div class="card ">
+                            <div class="play">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 50 50" stroke="#000000">
+                                   
+                                    <circle cx="25" cy="25" r="24" fill="blue" />
+                                    
+                                    <polygon points="18,13 35,25 18,37" fill="black" />
+                                  </svg>
+                            </div>
+                            <img src="Images/Trending.png" alt="" height="140" width="150">
+                            <p></p>Song Name</p>
+                            <p>Song Information</p>
+                        </div>
+                        <div class="card ">
+                            <div class="play">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 50 50" stroke="#000000">
+                                   
+                                    <circle cx="25" cy="25" r="24" fill="blue" />
+                                    
+                                    <polygon points="18,13 35,25 18,37" fill="black" />
+                                  </svg>
+                            </div>
+                            <img src="Images/Trending.png" alt="" height="140" width="150">
+                            <p></p>Song Name</p>
+                            <p>Song Information</p>
+                        </div>
+                        <div class="card ">
+                            <div class="play">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 50 50" stroke="#000000">
+                                   
+                                    <circle cx="25" cy="25" r="24" fill="blue" />
+                                    
+                                    <polygon points="18,13 35,25 18,37" fill="black" />
+                                  </svg>
+                            </div>
+                            <img src="Images/Trending.png" alt="" height="140" width="150">
+                            <p></p>Song Name</p>
+                            <p>Song Information</p>
+                        </div>
+                        <div class="card ">
+                            <div class="play">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 50 50" stroke="#000000">
+                                   
+                                    <circle cx="25" cy="25" r="24" fill="blue" />
+                                    
+                                    <polygon points="18,13 35,25 18,37" fill="black" />
+                                  </svg>
+                            </div>
+                            <img src="Images/Trending.png" alt="" height="140" width="150">
+                            <p></p>Song Name</p>
+                            <p>Song Information</p>
+                        </div>
+                        <div class="card ">
+                            <div class="play">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 50 50" stroke="#000000">
+                                   
+                                    <circle cx="25" cy="25" r="24" fill="blue" />
+                                    
+                                    <polygon points="18,13 35,25 18,37" fill="black" />
+                                  </svg>
+                            </div>
+                            <img src="Images/Trending.png" alt="" height="140" width="150">
+                            <p></p>Song Name</p>
+                            <p>Song Information</p>
+                        </div>
+                        <div class="card ">
+                            <div class="play">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 50 50" stroke="#000000">
+                                   
+                                    <circle cx="25" cy="25" r="24" fill="blue" />
+                                    
+                                    <polygon points="18,13 35,25 18,37" fill="black" />
+                                  </svg>
+                            </div>
+                            <img src="Images/Trending.png" alt="" height="140" width="150">
+                            <p></p>Song Name</p>
+                            <p>Song Information</p>
+                        </div>
+                        <div class="card ">
+                            <div class="play">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 50 50" stroke="#000000">
+                                   
+                                    <circle cx="25" cy="25" r="24" fill="blue" />
+                                    
+                                    <polygon points="18,13 35,25 18,37" fill="black" />
+                                  </svg>
+                            </div>
+                            <img src="Images/Trending.png" alt="" height="140" width="150">
+                            <p></p>Song Name</p>
+                            <p>Song Information</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="playlist">
+                    <h1>Devotional Songs</h1>
+                    <div class="cardContainer">
+                        <div class="card ">
+                            <div class="play">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 50 50" stroke="#000000">
+                                   
+                                    <circle cx="25" cy="25" r="24" fill="blue" />
+                                    
+                                    <polygon points="18,13 35,25 18,37" fill="black" />
+                                  </svg>
+                            </div>
+                            <img src="Images/EverGreen.png" alt="" height="140" width="150">
+                            <p></p>Song Name</p>
+                            <p>Song Information</p>
+                        </div>
+                        <div class="card ">
+                            <div class="play">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 50 50" stroke="#000000">
+                                   
+                                    <circle cx="25" cy="25" r="24" fill="blue" />
+                                    
+                                    <polygon points="18,13 35,25 18,37" fill="black" />
+                                  </svg>
+                            </div>
+                            <img src="Images/EverGreen.png" alt="" height="140" width="150">
+                            <p></p>Song Name</p>
+                            <p>Song Information</p>
+                        </div>
+                        <div class="card ">
+                            <div class="play">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 50 50" stroke="#000000">
+                                   
+                                    <circle cx="25" cy="25" r="24" fill="blue" />
+                                    
+                                    <polygon points="18,13 35,25 18,37" fill="black" />
+                                  </svg>
+                            </div>
+                            <img src="Images/EverGreen.png" alt="" height="140" width="150">
+                            <p></p>Song Name</p>
+                            <p>Song Information</p>
+                        </div>
+                        <div class="card ">
+                            <div class="play">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 50 50" stroke="#000000">
+                                   
+                                    <circle cx="25" cy="25" r="24" fill="blue" />
+                                    
+                                    <polygon points="18,13 35,25 18,37" fill="black" />
+                                  </svg>
+                            </div>
+                            <img src="Images/EverGreen.png" alt="" height="140" width="150">
+                            <p></p>Song Name</p>
+                            <p>Song Information</p>
+                        </div>
+                        <div class="card ">
+                            <div class="play">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 50 50" stroke="#000000">
+                                   
+                                    <circle cx="25" cy="25" r="24" fill="blue" />
+                                    
+                                    <polygon points="18,13 35,25 18,37" fill="black" />
+                                  </svg>
+                            </div>
+                            <img src="Images/EverGreen.png" alt="" height="140" width="150">
+                            <p></p>Song Name</p>
+                            <p>Song Information</p>
+                        </div>
+                        <div class="card ">
+                            <div class="play">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 50 50" stroke="#000000">
+                                   
+                                    <circle cx="25" cy="25" r="24" fill="blue" />
+                                    
+                                    <polygon points="18,13 35,25 18,37" fill="black" />
+                                  </svg>
+                            </div>
+                            <img src="Images/EverGreen.png" alt="" height="140" width="150">
+                            <p></p>Song Name</p>
+                            <p>Song Information</p>
+                        </div>
+                        <div class="card ">
+                            <div class="play">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 50 50" stroke="#000000">
+                                   
+                                    <circle cx="25" cy="25" r="24" fill="blue" />
+                                    
+                                    <polygon points="18,13 35,25 18,37" fill="black" />
+                                  </svg>
+                            </div>
+                            <img src="Images/EverGreen.png" alt="" height="140" width="150">
+                            <p></p>Song Name</p>
+                            <p>Song Information</p>
+                        </div>
+                        <div class="card ">
+                            <div class="play">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 50 50" stroke="#000000">
+                                   
+                                    <circle cx="25" cy="25" r="24" fill="blue" />
+                                    
+                                    <polygon points="18,13 35,25 18,37" fill="black" />
+                                  </svg>
+                            </div>
+                            <img src="Images/EverGreen.png" alt="" height="140" width="150">
+                            <p></p>Song Name</p>
+                            <p>Song Information</p>
+                        </div>
+                        <div class="card ">
+                            <div class="play">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 50 50" stroke="#000000">
+                                   
+                                    <circle cx="25" cy="25" r="24" fill="blue" />
+                                    
+                                    <polygon points="18,13 35,25 18,37" fill="black" />
+                                  </svg>
+                            </div>
+                            <img src="Images/EverGreen.png" alt="" height="140" width="150">
+                            <p></p>Song Name</p>
+                            <p>Song Information</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="playbar border">
+                <div class="seekbar">
+                    <div class="circle">
+
+                    </div>
+                </div>
+                <div class="abovebar">
+                    <div class="songinfo">
+                        Song Information
+                    </div>
+                    <div class="songbutton">
+                        <img class="invert" src="Images/Prev.svg" alt="">
+                        <img class="invert" src="Images/Play.svg" alt="">
+                        <img class="invert" src="Images/Next.svg" alt="">
+                    </div>
+                    <div class="songtime">
+                        00:00
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="Script.js" defer></script>
+</body>
+</html>
